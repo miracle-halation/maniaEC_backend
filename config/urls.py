@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from corporations.urls import router as corporate_router
+from api.corporations.urls import router as corporate_router
 
 
 urlpatterns = [
