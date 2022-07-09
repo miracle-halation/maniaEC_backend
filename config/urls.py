@@ -21,4 +21,5 @@ from api.corporations.urls import router as corporate_router
 urlpatterns = [
   path('admin/', admin.site.urls),
   path(r'api/', include(corporate_router.urls)),
+  path('api/v1/auth/', include('djoser.urls.jwt'))
 ]
