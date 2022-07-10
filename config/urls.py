@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
-from api.corporations.urls import router as corporate_router
+from api.circles.urls import router as circle_router
 
 
 urlpatterns = [
   path('admin/', admin.site.urls),
-  path(r'api/', include(corporate_router.urls)),
+  path(r'api/', include(circle_router.urls)),
   path('api/v1/auth/', include('djoser.urls.jwt'))
 ]
